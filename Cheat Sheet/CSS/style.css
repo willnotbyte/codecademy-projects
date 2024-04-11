@@ -1,0 +1,183 @@
+/*Header*/
+
+header {
+    background-color: #EFEEEE;
+    text-align: center;
+    height: 200px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: solid 5px #000;
+    opacity: 0.9;
+}
+
+header h1 {
+    color: #F26627;
+    font-size: 60px;
+    padding: 10px;
+    margin: 0;
+}
+
+header hr {
+    border: 1px solid #000;
+}
+
+header li {
+    background-color: #fff;
+    padding: 5px 10px;
+    margin: 10px 30px;
+    display: inline-block;
+    border: solid 3.5px #000;
+    border-radius: 10px;
+    font-size: 25px;
+    width: 150px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+header a {
+    color: #F26627;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header li:hover {
+    background-color: #F9A26C;
+}
+
+/* Footer Content */ 
+
+footer {
+    background-color: #EFEEEE;
+    height: 150px;
+    z-index: 10;
+    border-top: solid 5px #000;
+}
+
+footer li {
+    color: #F26627;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 3em;
+    margin: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer .contact-information {
+    width: 300px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .contact-title {
+    border-bottom: 2px solid #F26627;
+    font-size: 14px;
+}
+
+/*Main Content*/
+
+body {
+    background-color: #325D79;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#html h2, #css h2, #javascript h2, #dom h2, #git h2 {
+    color: #F26627;
+    font-size: 40px;
+}
+
+#html h3, #css h3, #javascript h3, #dom h3, #git h3 {
+    color: #F26627;
+    font-size: 30px;
+}
+
+content hr {
+    border: 1px solid #000;
+    margin: 0 250px;
+}
+
+.code-format {
+    margin: 0px auto;
+    display: inline-block;
+    width: 850px;
+}
+
+/*HTML*/
+
+#html {
+    text-align: center;
+    margin: 50px 350px;
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+    border: solid 5px #000;
+    border-radius: 10px;
+}
+
+/*CSS*/
+
+#css {
+    text-align: center;
+    margin: 50px 350px;
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+    border: solid 5px #000;
+    border-radius: 10px;
+}
+
+/*JavaScript*/
+
+#javascript {
+    text-align: center;
+    margin: 50px 350px;
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+    border: solid 5px #000;
+    border-radius: 10px;
+}
+
+/*DOM*/
+
+#dom {
+    text-align: center;
+    margin: 50px 350px;
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+    border: solid 5px #000;
+    border-radius: 10px;
+}
+
+/*Git*/
+
+#git {
+    text-align: center;
+    margin: 50px 350px;
+    height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #EFEEEE;
+    border: solid 5px #000;
+    border-radius: 10px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>HTML &amp CSS Cheat Sheet</title>
+        <link rel="stylesheet" href="./CSS/style.css"/>
+        <link rel="stylesheet" href="./Resources/prism.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>HTML &amp CSS Cheat Sheet</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <a href="#html"><li>HTML</li></a>
+                    <a href="#css"><li>CSS</li></a>
+                </ul>
+            </nav>
+        </header>
+        <content>
+            <div id="html">
+                <h2>HTML Cheat Sheet</h2>
+                <hr>
+                <h3>HTML Semantic Markup</h3>
+                <div class="semantic-html">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-markup">&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+
+  &lthead&gt
+    &lttitle&gtTitle&lt/title&gt
+  &lt/head&gt
+  
+  &ltbody&gt
+
+    &ltheader&gt
+      This is where your title, logo(s), and nav bar would be placed.
+    &lt/header&gt
+
+    &ltsection&gt
+      Related groups of information.
+      &ltarticle&gt
+        Contained group of information.
+      &lt/article&gt
+
+      &ltarticle&gt
+        If all other information was removed, this would still make sense.
+        &ltaside&gt
+          &ltblockquote&gt
+            Related to main information but not needed. Basically a side note.
+          &lt/blockquote&gt
+        &lt/aside&gt
+      &lt/article&gt
+    &lt/section&gt
+
+    &ltfooter&gt
+      Copyright and/or contact information and related links.
+    &lt/footer&gt
+
+  &lt/body&gt
+&lt/html&gt
+</code></pre>
+                </div>
+                </div>
+                <h3>HTML Form Tags</h3>
+                <div class="form-html">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-markup">&ltform&gt = Defines an HTML form.
+&ltinput&gt = Defines a user input.
+&lttextarea&gt = Defines a text area for user input.
+&ltlabel&gt = Defines a label for an input element.
+&ltfieldset&gt = A group of related elements in a form.
+&ltlegend&gt = Defines a caption for a &ltfieldset&gt element.
+&ltselect&gt = Defines a drop-down list.
+&ltoptgroup&gt = Defines a group of related options within a drop-down list.
+&ltoption&gt = Defines a specific option in a drop-down list.
+&ltbutton&gt = Defines a clickable button by the user.
+&ltdatalist&gt = Specifies a list of options for the user to select.
+&ltoutput&gt = Defines the result of an input or calculation.
+</code></pre>
+                  </div>
+                </div>
+                <h3>HTML Table</h3>
+                <div class="table-html">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-markup">&lttable&gt = Defines a table in HTML.
+&ltthead&gt = Group of the header content of a table.
+&lttbody&gt = Group of the body content of a table.
+&ltfoot&gt = Group of the footer content of a table.
+&ltth&gt = Defines a header cell in a table.
+&lttr&gt = Defines a row in a table.
+&lttd&gt = Defines a cell in a table.
+&ltcaption&gt = Defines a table caption.
+&ltcolgroup&gt = Specifies a group of column(s) in a table. 
+&ltcol&gt = Specifies the properties of a column within a &ltcolgroup&gt.
+</code></pre>
+                  </div>
+                </div>
+            </div>
+            <div id="css">
+                <h2>CSS Cheat Sheet</h2>
+                <hr>
+                <h3>Coloring</h3>
+                <div class="color-css">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-css">Hexadecimal {
+  color: #hexadecimal; 
+  /* Uses hexadecimal to assign a color. ex: #fff = white */
+}
+
+RGB {
+  color: rgb(red, green, blue); 
+  /* Uses red, green, and blue values respectively to assign a color. 
+  ex: rgb(255, 255, 255) = white */
+}
+
+RGBA {
+  color: rgba(red, green, blue, alpha); 
+  /* Uses red, green, and blue values respectively to assign a color.
+  Includes the usage of alpha (opacity 0.0 - 1.0). 
+  ex: rgba(255, 255, 255, 1) = white, fully visible */
+}
+
+HSL {
+  color: hsl(hue, saturation, lightness); 
+  /* Uses hue, saturation, and lightness values respectively to assign a color. 
+  ex: hsl(0, 0%, 100%) = white */
+}
+
+HSLA {
+  color: hsla(hue, saturation, lightness, alpha); 
+  /* Uses hue, saturation, and lightness values respectively to assign a color.
+  Includes the usage of alpha (opacity 0.0 - 1.0).  
+  ex: hsla(0, 0%, 100%, 1) = white, fully visible */
+}
+
+Predefined {
+  color: white;
+  /* Uses predefined values to assign a color. */
+}
+</code></pre>
+                  </div>
+                </div>
+                <h3>Positioning</h3>
+                <div class="position-css">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-css">tag/.class/#id {
+  position: static | relative | absolute | sticky; 
+  /* static is default 
+  sets the elements position */
+}
+
+tag/.class/#id {
+  margin: top right down left;
+  /* "margin: 0 auto;" 
+  centers the block into the center of the containing block */
+}
+
+tag/.class/#id {
+  overflow: visible | hidden | scroll | auto;
+  /* How to render content unable to fit in block given constraints */
+  overflow-x: hidden; /* hides horizontal scrollbar */
+  overflow-y: scroll; /* creates vertical scrollbar */
+}
+</code></pre>
+                  </div>
+                </div>
+                <h3>Sizing</h3>
+                <div class="sizing-css">
+                  <div class="code-format">
+                    <pre class="line-numbers">
+<code class="language-css">tag/.class/#id {
+  height: px | em | % | keyword;
+  /* sets the height of non-inline elements */
+  width: px | em | % | keyword;
+  /* sets the width of non-inline elements */
+  box-sizing: content-box | border-box | initial | inherit;
+  /* defines how the width and height of an element are calculated */
+}
+</code></pre>
+                  </div>
+                </div>
+            </div>
+        </content>
+        <footer>
+          <div class="footer-content">
+            <div class="contact-information">
+              <ul>
+                <li><span class="contact-title">Contact Links</span></li>
+                <a href="https://linkedin.com/in/william-heintschel-894999249" target="_blank"><li>LinkedIn</li></a>
+                <a href="https://github.com/willnotbyte" target="_blank"><li>GitHub</li></a>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <script src="./Resources/prism.js"></script>
+    </body>
+</html>
